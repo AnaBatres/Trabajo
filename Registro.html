@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<htlm lang=es>
+<head>
+    <meta charset="UTF 8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Pagina Web </title> 
+    <link rel="stylesheet" href="css/style.css" >
+</head>
+<body id="body">
+<header>
+    <div class="logo">
+        <img src="imagenes/dahlia.png" alt="logo">
+    </div>
+    <h2 id="nombre"> FLORISTERIA DAHLIA</h2>
+    <nav class="iconos">
+         <a href="Contacto.html"><img src="imagenes/contacto.png" alt="contacto" ></a>
+         <a href="PerfilUsuario.html"><img src="imagenes/perfil.png" alt="perfil"></a> 
+         <a href="Carrito.html"><img src="imagenes/carrito.png" alt="carrito"></a> 
+         <a href="InicioSesion.html" id="sesion"> Inicio Sesion </a> 
+    </nav>
+</header>
+<div class="menu">
+<ul>
+    <li>
+    <a class="menu2" href="PaginaPrincipal.html">
+        Inicio
+    </a>
+    <a class="menu2" href="SubidaProducto.html">
+        Sube tu producto
+    </a>
+    <a class="menu2" href="PaginaPrincipal.html">
+        Flores
+    </a>
+    <a class="menu2" href="PaginaPrincipal.html">
+        Ramos
+    </a>
+    <a class="menu2" href="PaginaPrincipal.html">
+        Regalos
+    </a>
+    </li>
+</ul>
+</div>
+<div class="iniciosesion">
+    <div class="formulario">
+       <h1>Registrarse</h1> 
+       <form >
+            <div class="formu">
+                <input id="e-mail" max-length="25" required="" required placeholder="(nombre@gmail.com)" >
+                <input autocomplete="off" type="text" placeholder="Nombre, sin caracteres especiales" pattern="[A-Za-z0-9]+" minlength="3"required="" />
+                <input type="password" placeholder="Contrase&ntilde;a, minimo 8 digitos"  minlength="8" pattern="">
+                <input type="password" required placeholder="Repetir Contrase&ntilde;a" minlength="8">
+                <input type="tel" name="telefono" minlength="9"  required="" maxlength="9" placeholder="Telefono (9 digitos)" pattern="(([0-9]{3})([0-9]{3})([0-9]{3}))" />   
+               </div> 
+        </form>
+        <form action="/action_page.php">
+            <label for="birthday">Fecha de Nacimiento</label>
+            <input type="date" id="birthday" name="birthday">
+          </form>
+        <input type="submit" value="Crear cuenta" id="crearcuenta">
+    </div>
+</div>
+</body>
+</html>
